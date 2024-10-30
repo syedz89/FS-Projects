@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desk Reservation System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Desk Reservation System</h1>
+        </header>
+        <main>
+            <form id="reservationForm">
+                <label for="desk">Select Desk:</label>
+                <select id="desk" name="desk">
+                    <option value="Desk1">Desk1</option>
+                    <option value="Desk2">Desk2</option>
+                    <option value="Desk3">Desk3</option>
+                    <option value="Desk4">Desk4</option>
+                    <option value="Desk5">Desk5</option>
+                    <option value="Desk6">Desk6</option>
+                    <option value="Desk7">Desk7</option>
+                </select><br><br>
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date"><br><br>
+                <label for="time">Select Time:</label>
+                <input type="time" id="time" name="time"><br><br>
+                <button type="button" onclick="reserveDesk()">Reserve</button>
+            </form>
+            <p id="confirmation"></p>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
